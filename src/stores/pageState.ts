@@ -2,7 +2,7 @@ import { ref, watchEffect } from 'vue';
 import { defineStore } from 'pinia';
 
 export const usePageState = defineStore('pageState', () => {
-  const pageTitle = ref('视频编辑（CcClip）');
+  const pageTitle = ref('视频编辑');
   // 暗色模式
   const isDark = ref(localStorage.theme === 'dark');
   const isLoading = ref(localStorage.loadingPage === '1');

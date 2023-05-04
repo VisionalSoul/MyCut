@@ -1,10 +1,7 @@
 <template>
   <header class="h-12 w-full flex flex-nowrap flex-row items-center justify-center border-b dark:border-gray-600 border-gray-300">
     <div class="flex w-1/3 pl-2 items-center">
-      <div class="w20">
-        <img class="h-8" :src="logoImage" alt="">
-      </div>
-      <span class="text-xs select-none ml-4">自动保存：2023-02-10 00:51</span>
+      <div class="w20" />
     </div>
     <h2 class="align-middle w-1/5 text-center flex-1 select-none text-sm">
       {{ store.pageTitle }}
@@ -30,7 +27,6 @@
 </template>
 
 <script setup lang="ts">
-  import logoImage from '@/assets/ccLogo.png';
   import { ref, computed } from 'vue';
   import { Download, Sunny, Moon } from '@element-plus/icons-vue';
   import { usePageState } from '@/stores/pageState';
