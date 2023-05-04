@@ -47,5 +47,8 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
       pages: path.resolve(__dirname, './src/pages')
     }
+  },
+  server: {
+    host: '0.0.0.0'
   }
 });
